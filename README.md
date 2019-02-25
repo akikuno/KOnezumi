@@ -1,4 +1,4 @@
-![KOnezumi](https://github.com/akikuno/KOnezumi/blob/master/LOGO_KOnezumi.svg)  
+![KOnezumi](https://github.com/akikuno/KOnezumi/blob/images/LOGO_KOnezumi.svg)  
 
 KOnezumi is a web application to automate the gene disruption strategies to generate knockout mice
 
