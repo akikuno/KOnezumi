@@ -1,0 +1,472 @@
+@charset "UTF-8";
+/*====================================
+Reset Settings
+====================================*/
+/*
+YUI 3.17.2 (build 9c3c78e)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+ 
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+.yui3-cssfonts body, .yui3-cssfonts {
+    font: 13px/1.231 arial, helvetica, clean, sans-serif;
+ *font-size:small; /* for IE */
+ *font:x-small; /* for IE in quirks mode */
+}
+/**
+ * Nudge down to get to 13px equivalent for these form elements
+ */
+.yui3-cssfonts select, .yui3-cssfonts input, .yui3-cssfonts button, .yui3-cssfonts textarea {
+    font: 99% arial, helvetica, clean, sans-serif;
+}
+/**
+ * To help tables remember to inherit
+ */
+.yui3-cssfonts table {
+    font-size: inherit;
+    font-size:100%;
+}
+/**
+ * Bump up IE to get to 13px equivalent for these fixed-width elements
+ */
+.yui3-cssfonts pre, .yui3-cssfonts code, .yui3-cssfonts kbd, .yui3-cssfonts samp, .yui3-cssfonts tt {
+    font-family: monospace;
+ *font-size:108%;
+    line-height: 100%;
+}
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssfonts-context {
+    display: none;
+}
+/*フロート解除用のハック*/
+/*clearfixの設定*/
+.clearfix:after{   
+visibility:hidden;/*見えなくする*/
+height:0;/*見えなくする*/
+display: block;/*block要素にする*/
+font-size: 0;   
+content: " ";   
+clear: both;   
+}   
+* html .clearfix     { zoom: 1; } /* IE6 */   
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+ 
+html {
+    color: #000;
+    background: #FFF;
+}
+ 
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0;
+}
+/*
+    TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+ol, ul {
+    list-style: none;
+}
+caption, th {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+q:before, q:after {
+    content: '';
+}
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+ *font-size:100%; /*to enable resizing for IE*/
+}
+/*because legend doesn't inherit in IE */
+legend {
+    color: #000;
+}
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+    display: none;
+}
+ 
+/*====================================
+General Settings
+====================================*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+ 
+body {
+    font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+ 
+strong{font-weight: bold}
+ 
+ 
+a:link { color: #a86400; }
+a:visited { color: #a86400; }
+ 
+ 
+#wrapper{
+    width:100%;
+}
+ 
+ 
+/*====================================
+Header Settings
+====================================*/
+#sns{
+    width:960px;
+    margin:0 auto;
+}
+ 
+#tweet,.fb-like{
+    margin-top:20px;
+    margin-right:20px;
+    float:right;
+}
+ 
+ 
+#header{
+    width:100%;
+    height:100px;
+    margin-left:0px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background:url(../images/color_bar.png) repeat-x bottom left;
+}
+ 
+h1#main_title{
+    font-size:4em;
+    font-weight:bold;
+    width:960px;
+    margin:0px 5px 0px 0px;
+    padding:0px 0px 0px 0px;
+}
+ 
+h1#main_title img{
+    margin-bottom:15px;
+}
+ 
+h1#logo_title img{
+    margin-bottom:10px;
+    float: right;
+}
+ 
+/*====================================
+Main Contents Settings
+====================================*/
+#main_contents{
+width:960px;
+margin-left: 10px;
+}
+ 
+#main_contents h2{
+font-size:1.25em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+ 
+#main_contents h3{
+      margin-top : 10px ;
+    font-size:1.25em;
+    font-weight:bold;
+    padding-bottom: 5px;
+position: relative;
+padding: .25em 0 .5em .75em;
+border-left: 10px solid #ffbe00;
+}
+ 
+h3::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #ccc;
+}
+ 
+#main_contents h4{
+font-size: 110%;
+font-weight: normal;
+padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+ 
+#main_contents p{
+    font-size:105%;
+}
+ 
+/*====================================
+Menu Contents Settings
+====================================*/
+ 
+#menu {
+float: right;
+width: 150px;
+}
+ 
+/*====================================
+Footer Settings
+====================================*/
+#click_station{
+    display:block;
+    margin-left:20px;
+    margin-top:10px;
+    font-size:0.9em;
+    font-weight:normal;
+}
+ 
+ 
+#btn_area{
+    width:960px;
+    margin:0 auto;
+    padding:0 20px 20px;
+}
+ 
+#autoupdate_request{
+    margin:20px 0 0 20px;
+}
+ 
+ 
+#reload_btn{
+    float:left;
+}
+ 
+#show_btn{
+    float:right;
+}
+ 
+#footer{
+    width:100%;
+    margin-left: 0px;
+    background:url(../images/color_bar.png) repeat-x 0 0;
+    padding-top:30px
+}
+ 
+#footer_contents{
+    width:960px;
+    margin-top:5px;
+    margin-left:10px;
+}
+ 
+#footer_contents h2{
+    font-size:1.2em;
+    font-weight:bold;
+}
+ 
+#footer_contents ul{
+    margin-left: 0px;
+}
+ 
+#footer_contents li{
+    padding-bottom:5px;
+}
+ 
+#footer_contents p{
+    text-align:center;
+}
+ 
+#static{
+    font-size:1.3em;
+    float:left;
+    line-height:1.8;
+    display:block;
+    margin-left:20px;
+    margin-top:-5px;
+}
+ 
+/*====================================
+ACCORDION BOX Settings
+====================================*/
+ 
+.accbox {
+    padding: 0;
+}
+ 
+.accbox label {
+font-size: 110%;
+    font-weight: bold;
+     
+display: block;
+    margin: 1.5px 0;
+    padding : 10px 10px;
+    color: black;
+       background: #fff2cc;
+    cursor :pointer;
+    transition: all 0.5s;
+}
+ 
+/*アイコンを表示*/
+.accbox label:before {
+    padding-right: 8px;
+}
+ 
+/*ラベルホバー時*/
+.accbox label:hover {
+    background :#ffbe00;
+}
+ 
+/*チェックは隠す*/
+.accbox input {
+    display: none;
+}
+ 
+/*中身を非表示にしておく*/
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+ 
+/*クリックで中身表示*/
+.cssacc:checked + label + .accshow {
+    height: auto;
+    padding: 5px;
+    opacity: 1;
+}
+ 
+.accbox .accshow p {
+    margin: 15px 10px}
+ 
+/*アイコンを入れ替える*/
+.cssacc:checked + label:before {
+ 
+}
+ 
+ 
+/*====================================
+SUBMIT and DOWNLOAD button settings
+====================================*/
+ 
+.square_btn_submit{
+    font-weight: bold;
+display: inline-block;
+    padding: 0.3em 0.5em;
+    text-decoration: none;
+    background: #e5e5e5;/*ボタン色*/
+    color: #555555;
+    border-radius: 10px;
+}
+.square_btn_submit:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+ 
+.square_btn{
+    font-weight: bold;
+display: inline-block;
+    padding: 0.3em 0.5em;
+    text-decoration: none;
+    background: #fff2cc;/*ボタン色*/
+    color: #555555;
+    border-radius: 10px;
+}
+ 
+.square_btn:hover {
+    background :#ffbe00;
+}
+ 
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+ 
+ 
+/*====================================
+gRNA and PRIMER TABLE settings
+====================================*/
+ 
+.table6_2 table {
+    width:100%;
+    margin:15px 0;
+    border:0;
+}
+.table6_2 th {
+    font-weight: bold;
+background-color:#555555;
+    color:#FFFFFF
+}
+.table6_2,.table6_2 th,.table6_2 td {
+    font-size:1em;
+    text-align:center;
+    padding:4px;
+    border-collapse:collapse;
+}
+ 
+.table6_2 th,.table6_2 td {
+    border: 1px solid #202020;
+    border-width:1px 0 1px 0
+}
+.table6_2 tr {
+    border: 1px solid #ffffff;
+}
+ 
+/*====================================
+FLAMESHIFT Settings
+====================================*/
+ 
+.details {
+font-size: 110%;
+font-weight: normal;
+    padding-bottom: 5px;
+}
+ 
+.header_flameshift{
+    font-family: "Courier New";
+    font-weight: bold;
+    font-size: 18px;
+}
+ 
+.flameshift {
+    width:870px;
+    word-wrap: break-word;
+    font-family: "Courier New";
+    font-size: 18px;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+

@@ -1,0 +1,195 @@
+<div class="accbox">
+<input type="checkbox" id="HOGE" class="cssacc" />
+<label for="HOGE"><i class="far fa-hand-point-right"></i>&ensp;HOGE</label>
+ 
+<div class="accshow">
+ 
+<!--Type hidden contents below-->
+ 
+<h3> 1. Overview of target gene </h3>
+<br>
+<h4 style="margin-left:30px; font-weight:bold;"> Schematic diagram of targeting gene region</h4>
+<img src="ROOTDIR/DATA/GVIZ/HOGE_schema.png" alt="KOnezumi" width="100%">
+<br>
+<!-- ZOOM
+<h4 style="margin-left:30px; font-weight:bold;"> Zoom to gRNA%1 targeting locus</h4>
+<img src="ROOTDIR/DATA/GVIZ/HOGE_schema_zoom_gRNA%1.png" alt="KOnezumi" width="100%">
+ZOOM -->
+
+<br>
+<div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #333333;">
+
+<h4><strong>Genomic deletion size and genotyping PCR product size</strong></h4>
+<!-- GENOMICSIZE
+<p>%1 deletion size: %2 - %3 bp<p>
+<p>Genotyping PCR product size:<p>
+<li style="margin-left:40px; font-size:105%; padding-bottom:5px;"> Primer1-Primer2 (WT band) = 200 - 350 bp</li>
+<li style="margin-left:40px; font-size:105%; padding-bottom:5px;"> Primer1-Primer3 (Deletion band) = 400 -1100 bp</li>
+<li style="margin-left:40px; font-size:105%; padding-bottom:5px;"> Primer1-Primer3 (WT band) = %4 - %5 bp</li>
+GENOMICSIZE  -->
+
+<hr style="border: 1px dashed #333333;">
+
+<h4><strong>Protein-coding sequence (CDS) information</strong></h4>
+<!-- DELPER
+<p>%1 : %2 will remove %3 of CDS. Frameshift mutation by its deletion will disrupt %4 of CDS.<p>
+DELPER -->
+
+<hr style="border: 1px dashed #333333;">
+
+<h4><strong>Gene information</strong></h4>
+<p>Links to gene information:
+<a href="https://www.ncbi.nlm.nih.gov/gene/ENTREZ" target="_blank">NCBI Gene</a>,
+&ensp;
+<a href="http://www.informatics.jax.org/marker/MGIGENE" target="_blank">Mouse Genome Informatics</a>,
+&ensp;
+<a href="http://fantom.gsc.riken.jp/5/sstar/EntrezGene:ENTREZ" target="_blank">FANTOM5 SSTAR</a>
+</p>
+ 
+<p>Links to genome browsers:
+<a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm9&position=CHR%3ASTART%2DEND" target="_blank">UCSC Genome Browser</a>,
+&ensp;
+<a href="http://fantom.gsc.riken.jp/zenbu/gLyphs/#config=Ud1lTapgPZpqhPz_ZXPZKC;loc=mm9::CHR:START..END+" target="_blank">ZENBU Genome Browser</a></p>
+ 
+</div> <!-- border -->
+ 
+<br>
+
+<h3> 2. CRISPR gRNA candidates </h3>
+ 
+<br>
+ 
+<div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #333333;">
+<p>CRISPR gRNA candidates are sorted as high specificity (MIT) and high cutting efficiency (Doench/Fusi). </p>
+<p>Recommend to use gRNA candidates with <strong>MIT > 50</strong> and <strong>Doench/Fusi > 66%(55)</strong> as bold-highlighted below.</p>
+ 
+<p>The details of each score are described at
+<a href="http://genome.ucsc.edu/cgi-bin/hgTrackUi?db=mm9&g=crispr" target="_blank">UCSC CRISPR/Cas9 track</a>.
+</p>
+<p>Guide sequence is linked to <a href="http://crispr.dbcls.jp/" target="_blank">CRISPRdirect</a>.</p>
+</div> <!-- dashed border -->
+ 
+<div class="table6_2">
+
+<!-- GRNA-1
+=%1=<p style=" margin-botton:2px; "> </p>
+<table border="1" cellspacing="0" cellpadding="5">
+<tr style="color: #ffffff; background-color: #555555;">
+<th>ID</th><th>chr</th><th>start</th><th>end</th><th>+/-</th><th>Guide sequence</th><th>PAM</th><th>MIT</th><th>Doench/Fusi</th><th>Moreno-Mateos</th>
+</tr>
+GRNA-2
+<tr style=""><td style="text-align:left;">%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td><td style="text-align:left;"><a href="http://crispr.dbcls.jp/?userseq=%7%8&pam=NGG&db=mm9" target="_blank">%7</a></td><td>%8</td><td>%9</td><td>%10</td><td>%11</td></tr>
+GRNA-2
+GRNA-1 -->
+
+</table>
+</div><!-- table6_2-->
+<br>
+
+<h3> 3. Primer candidates for genotyping </h3>
+ 
+<br>
+ 
+<div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #333333;">
+<p>Recommend to select primers with <strong>higher Score </strong> and <strong>lower Penalty.</strong></p>
+ 
+<p><strong>Score</strong> indicates primer specificity as described below.</p>
+
+<table style="white-space: nowrap; margin: 0 0 0 20px; padding: 0;">
+    <tr>
+        <td style="padding-bottom:5"><li><strong>Score 3: high-specific primers</strong></li></td>
+        <td style="padding-bottom:5">: 1 site for 0 mismatch, < 20 sites for 1 mismatch, and < 100 sites for 2 mismatches </td>
+        
+    </tr>
+    <tr>
+        <td style="padding-bottom:5"><li><strong>Score 2: mid-specific primers</strong></li></td>
+        <td style="padding-bottom:5">: 1 site for 0 mismatch, < 20 sites for 1 mismatch, but > 100 sites for 2 mismatches </td>
+        
+    </tr>
+    <tr>
+        <td style="padding-bottom:5"><li><strong>Score 1: low-specific primers</strong></li></td>
+        <td style="padding-bottom:5">: 1 site for 0 mismatch, but > 20 sites for 1 mismatch, > 100 sites for 2 mismatches </td>
+        
+    </tr>
+    <tr>
+        <td style="padding-bottom:5"><li><strong>Score 0: no-specific primers</strong></li></td>
+        <td style="padding-bottom:5">: Check GGGenome to count off-target sites and carefully use the primers </td>
+    </tr>
+</table>
+    
+<p> <strong>Penalty</strong> indicates general primer quality. The lower, the better. Details are described at  <a href="http://primer3.org/primer3_manual.htm#calculatePenalties"  target="_blank">
+Primer3 manual</a>.</p>
+ 
+<p>Primer sequence is linked to <a href="http://gggenome.dbcls.jp/en" target="_blank">GGGenome</a>.</p>
+ 
+</div> <!-- dashed border -->
+ 
+ 
+ 
+<div class="table6_2">
+
+<!-- PRIMER-1
+=%1=<p style=" margin-botton:2px; "> </p>
+<table border="1" cellspacing="0" cellpadding="5">
+<tr style="color: #ffffff; background-color: #555555;">
+<th>ID</th><th>Score</th><th>Penalty</th><th>Primer sequence</th><th>TM</th><th>GC-percent</th><th>Self-any</th><th>Self-end</th><th>Hairpin-TH</th><th>End-stability</th>
+</tr>
+PRIMER-2
+<tr><td style="text-align:left;">%2</td><td>%3</td><td>%4</td><td style="text-align:left;"><a href="http://gggenome.dbcls.jp/en/mm9/%5" target="_blank">%5</a></td><td>%6</td><td>%7</td><td>%8</td><td>%9</td><td>%10</td><td>%11</td></tr>
+PRIMER-2
+PRIMER-1 -->
+
+ 
+</table>
+</div><!-- table6_2-->
+<br>
+
+<h3> 4. Target exon sequence</h3>
+<br>
+<details><summary><span style="font-size:120%;">Click here to see target exon sequences</span></summary>
+<br>
+
+<!-- TARGETEXON
+<div class="header_flameshift">
+<font color="#343434"> %1 </font>
+</div>
+
+<div class="flameshift">
+<font color="#343434">%2</font>
+</div>
+<br>
+TARGETEXON -->
+</details>
+
+<h3> 5. CDS after deletion </h3>
+<br>
+<details><summary><span style="font-size:120%;">Click here to see deleted coding sequences</span></summary>
+<br>
+
+<div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #333333;">
+<p>Color annotations:
+<span style="font-weight: bold; color:green;">frameshift codon</span>,
+<span style="font-weight: bold; color:red;">premature termination codon (PTC)</span>,
+<span style="font-weight: bold; color:#AFA6FE;">last exon</span>
+</p>
+<p> Aberrant mRNAs will be degraded by NMD when PTC is more than 50-55 nt upstream of the last exon junction. <a href="https://www.nature.com/articles/nrm1310"  target="_blank">(ref)</a></p>
+<span style="margin-left:20px;">*NMD: nonsense-mediated mRNA decay</span>
+<p>No CDS is displayed when gRNAs deletes all CDS or first exon or last exon or second to the last exon.</p>
+</div>
+
+<!-- NOCDS -->
+<!-- CDS_MOJIHAME
+<br>
+<div class="header_flameshift"><span style="color:#343434"> %1 </span></div>
+<div class="flameshift">
+
+<span style="color:#343434">%2</span><span style="color:green"><strong>%3</strong></span><span style="color:red"><strong>%4</strong></span><span style="color:#bcbcbc">%5</span><span style="color:#AFA6FE"><strong>%6</strong></span>
+</div>
+CDS_MOJIHAME -->
+</details>
+
+</div><!--/acchow-->
+
+
+
+

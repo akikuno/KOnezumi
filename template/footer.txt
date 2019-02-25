@@ -1,0 +1,31 @@
+</div> <!--/Folding-->
+</div><!--/accbox-->
+<br>
+
+</div><!--/main_contents -->
+
+<div id="footer">
+<div id="footer_contents">
+<h2 style="margin-left:10px;padding-bottom:10px;">Information</h2>
+
+<h4 style="margin-left:10px;padding-bottom:10px;"><i class="far fa-file-alt"></i>
+<a href="https://docs.google.com/document/d/1DOmq2DI-oi-wxgIS0xKmcTqkFcSq7U3RJRefMPGefws/edit?usp=sharing"  target="_blank"> Documentation </a>
+</h4>
+ 
+<!-- 
+<h4 style="margin-left:10px;padding-bottom:10px;"><i class="fas fa-quote-left"></i>  
+Citation: </h4>
+-->
+
+<h4 style="margin-left:10px;padding-bottom:10px;"><i class="far fa-envelope"></i>
+akuno[at]md.tsukuba.ac.jp</h4>
+<br>
+<p>Laboratory Animal Resource Center | University of Tsukuba</p>
+<p><i class="far fa-copyright"></i> 2018 KOnezumi</p>
+     
+</div><!--/footer_contetns-->
+</div><!--/footer-->
+ 
+</body>
+ 
+</html>

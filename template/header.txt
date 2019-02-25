@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>KOnezumi</title>
+<link rel="shortcut icon" type="image/png" href="ROOTDIR/images/favi2.png">
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="ROOTDIR/css/style.css">
+
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.md.tsukuba.ac.jp/LabAnimalResCNT/KOanimals/konezumi.html">
+<h1 id="main_title", style="margin-left:15px; margin-bottom:15px;">
+<img src="ROOTDIR/images/LOGO_KOnezumi_2.png" width="360" height="100" alt="KOnezumi"/>
+</h1>
+</a>
+</div><!--/header-->
+
+<div id="main_contents">
+<br>
+
+<h4>
+<a class="square_btn" href="ROOTDIR/HOGE/result.tar.gz" download="result.tar.gz"><i class="fas fa-download"></i> Download results</a></h4>
+
+<h4> Or click gene symbol(s) to see results:</h4>
+
+

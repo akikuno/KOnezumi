@@ -1,0 +1,24 @@
+<h3> 5. Coding sequence after deletion </h3>
+<br>
+<details class="details"><summary>Click here to see deleted coding sequences</summary>
+<br>
+<div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #333333;">
+<h4>Color annotations:</h4>
+<p style="font-weight: bold; color:green;">frameshift codon</p>
+<p style="font-weight: bold; color:red;">premature termination codon</p>
+<p style="font-weight: bold; color:#AFA6FE;">last exon</p>
+</div>
+
+<!-- MOJIHAME
+<br>
+<div class="header_flameshift"><span style="color:#343434"> %1 </span></div>
+<div class="flameshift">
+
+<span style="color:#343434">%2</span><span style="color:green"><strong>%3</strong></span><span style="color:red"><strong>%4</strong></span><span style="color:#bcbcbc">%5</span><span style="color:#AFA6FE"><strong>%6</strong></span>
+</div>
+MOJIHAME -->
+</details>
+
+</div><!--/acchow-->
+
+
