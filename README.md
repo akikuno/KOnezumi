@@ -2,7 +2,7 @@
 
 KOnezumi is a web application to automate the gene disruption strategies to generate knockout mice
 
-# Usuage
+# Usage
 The web-tools are freely available from the following link:
 [http://www.md.tsukuba.ac.jp/LabAnimalResCNT/KOanimals/konezumi.html](http://www.md.tsukuba.ac.jp/LabAnimalResCNT/KOanimals/konezumi.html)
 
